@@ -32,10 +32,19 @@ Mount data volumes into container with edit abilities, like this:
 **Important**: Change the World Generator from DEFAULT to Biomes O' Plenty. In file ``server.properties`` set ``level-type=BIOMESOP``.
 Then delete the already generated world in the world folder!
 
-### Start container your custom settings
+### Start container with your custom settings
+
+With default memory:
 
     docker run --rm -it \
     --volumes-from litw_data \
     --net=host \
     axeclbr/forge
 
+With more RAM and in background:
+
+    docker run -d \
+    --volumes-from litw_data \
+    --net=host \
+    axeclbr/forge \
+    java -Xmx1024M -Xms1024M -jar /opt/forge/minecraft.jar
