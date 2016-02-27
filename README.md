@@ -2,7 +2,7 @@
 
 Minecraft Forge in Docker
 
-## Example with Modpack ["Life in the Woods"](docker create -v /data --name litw_data axeclbr/data /bin/true)
+## Example with Modpack ["Life in the Woods"](http://www.lifeinthewoods.ca/life.html)
 
 ### Create default settings
 
