@@ -1,8 +1,13 @@
 # Docker-Forge
 
-Minecraft Forge in Docker
+Minecraft Forge 1.6.4 in Docker
 
-## Example with Modpack ["Life in the Woods"](http://www.lifeinthewoods.ca/life.html)
+[![ImageLayers Size](https://img.shields.io/imagelayers/image-size/axeclbr/forge/latest.svg?style=flat-square)](https://imagelayers.io/?images=axeclbr/forge:latest)
+[![Twitter Follow](https://img.shields.io/twitter/follow/axeclbr.svg?style=social)](https://twitter.com/intent/follow?screen_name=axeclbr)
+
+## Usage
+
+Example with Modpack ["Life in the Woods"](http://www.lifeinthewoods.ca/life.html)
 
 ### Create default settings
 
