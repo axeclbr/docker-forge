@@ -23,6 +23,8 @@ Kill container with **Ctrl+C**
 
 ### Customize settings
 
+First copy the download-link from the server-version of the Modpack from the [Life-In-The-Woods-Website](http://www.lifeinthewoods.ca/life.html).
+
 Mount data volumes into container with edit abilities, like this:
 
     docker run --rm -it --volumes-from litw_data axeclbr/workbench
@@ -30,11 +32,16 @@ Mount data volumes into container with edit abilities, like this:
     # Move to data dir	
     $ cd /data
     
-    # Download Server-Modpack (link may change, please take a [look to the website](http://www.lifeinthewoods.ca/life.html))
-    $ curl -L http://[...].com/[...]/LifeInTheWoodsHungryServer.zip" -o /tmp/LifeInTheWoodsHungryServer.zip 
+    # Download Server-Modpack
+    $ curl -L [Download-Link from above] -o /tmp/LifeInTheWoodsHungryServer.zip 
     $ unzip /tmp/LifeInTheWoodsHungryServer.zip -d /data/mods/
 
-**Important**: Change the World Generator from DEFAULT to Biomes O' Plenty. In file ``server.properties`` set ``level-type=BIOMESOP``.
+### Update World Generator
+
+Change the World Generator from DEFAULT to Biomes O' Plenty.
+
+In file ``server.properties`` set ``level-type=BIOMESOP``.
+
 Then delete the already generated world in the world folder!
 
 ### Start container with your custom settings
