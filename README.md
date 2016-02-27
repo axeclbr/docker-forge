@@ -48,3 +48,12 @@ With more RAM and in background:
     --net=host \
     axeclbr/forge \
     java -Xmx1024M -Xms1024M -jar /opt/forge/minecraft.jar
+
+### Backup your Minecraft data
+
+To export the data from your data container into a tar-file, you can execute:
+
+    docker run --rm --volumes-from litw_data -v $(pwd):/backup axeclbr/workbench tar cvf /backup/backup.tar /data
+
+You should have a file named ``backup.tar`` in your current directory with all your important Minecraft worlds and settings in it.
+
